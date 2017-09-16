@@ -1,8 +1,8 @@
 <?php
 
 /*
-   Inspired by Badmoon labs back in 1995 thanks to David Raufeisen( https://twitter.com/fortyoz ) aka fortyoz aka r0rschach
-   Adopted in 1995-1998 by Gjermund G Thorsen beware of nested tables and inline phtml
+   Inspired by Badmoon labs back in 1998 thanks to David Raufeisen( https://twitter.com/fortyoz ) aka fortyoz aka r0rschach
+   Adopted in 1998 by Gjermund G Thorsen beware of nested tables and inline phtml
    Released in 2017 due to a conversation with Dennis Efremov for inspiration only
    This peace of software is for inspiration / learning only, and comes with no warranty what so ever.
 */
