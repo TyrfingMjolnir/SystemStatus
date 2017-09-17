@@ -23,13 +23,13 @@ function showHosts() {
 
   global $SYS_ADMIN, $TIMEOUT, $hosts, $downList, $allServicesOK;
 
-  $hostHeader  = "\t\t\t\t<TR>\n"
-               . "\t\t\t\t\t".'<td bgcolor="white" align="left" width="3" class="darkgreen">I/O</td>'."\n"
-               . "\t\t\t\t\t".'<td bgcolor="white" align="left" class="darkgreen">URI</td>'."\n"
-               . "\t\t\t\t\t".'<td bgcolor="white" align="left" class="darkgreen">service</td>'."\n"
-               . "\t\t\t\t\t".'<td bgcolor="white" align="left" width="3" class="darkgreen">I/O</td>'."\n"
-               . "\t\t\t\t\t".'<td bgcolor="white" align="left" class="darkgreen">URI</td>'."\n"
-               . "\t\t\t\t\t".'<td bgcolor="white" align="left" class="darkgreen">service</td>'."\n"
+  $hostHeader  = "\t\t\t\t" . '<TR>' . "\n"
+               . "\t\t\t\t\t" . '<td bgcolor="white" align="left" width="3" class="darkgreen">I/O</td>' . "\n"
+               . "\t\t\t\t\t" . '<td bgcolor="white" align="left" class="darkgreen">URI</td>' . "\n"
+               . "\t\t\t\t\t" . '<td bgcolor="white" align="left" class="darkgreen">service</td>' . "\n"
+               . "\t\t\t\t\t" . '<td bgcolor="white" align="left" width="3" class="darkgreen">I/O</td>' . "\n"
+               . "\t\t\t\t\t" . '<td bgcolor="white" align="left" class="darkgreen">URI</td>' . "\n"
+               . "\t\t\t\t\t" . '<td bgcolor="white" align="left" class="darkgreen">service</td>' . "\n"
                . '</TR>';
    
   echo $hostHeader;
