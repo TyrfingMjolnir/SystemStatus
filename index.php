@@ -86,19 +86,19 @@ function showHost( $service, $hostname, $port, $counter, $notify = 0 ) {
   global $SYS_ADMIN, $TIMEOUT;
   $fp = fsockopen( $hostname, $port, $errno, $errstr, $TIMEOUT );
 
-  $text=$hostname.':'.$port;
+  $text = $hostname . ':' . $port;
 
   if( $fp ) {
     $OK=1;
-    $color="darkgreen";
-    $ioColor="white";
-    $ioText='1';
-    fclose($fp);
+    $color   = 'darkgreen';
+    $ioColor = 'white';
+    $ioText  = '1';
+    fclose( $fp );
   } else {
-    $OK=0;
-    $color="maroon";
-    $ioColor="maroon";
-    $ioText='O';
+    $OK      = 0;
+    $color   = 'maroon';
+    $ioColor = 'maroon';
+    $ioText  = 'O';
   }
 
   $pos = strpos( $_SERVER["REMOTE_ADDR"], '10.0.0.' ); // this is the part of your LAN that is entitled to view the actual IPS and services
@@ -113,9 +113,9 @@ function showHost( $service, $hostname, $port, $counter, $notify = 0 ) {
     $text = $hostname.':'.$port;
   }
 
-  $hostOutput .= '<TD bgcolor="'.$color.'" align="center" width="3" class="'.$ioColor.'">'.$ioText.'</TD>'."\n\t\t\t\t\t";
-  $hostOutput .= '<TD bgcolor="white" align="left" class="'.$color.'">'.$text.'</TD>'."\n\t\t\t\t\t";
-  $hostOutput .= '<TD bgcolor="white" align="left" class="'.$color.'">'.$service.'</TD>'."\n\t\t\t\t";
+  $hostOutput .= '<TD bgcolor="' . $color . '" align="center" width="3" class="' . $ioColor . '">' . $ioText . '</TD>'."\n\t\t\t\t\t";
+  $hostOutput .= '<TD bgcolor="white" align="left" class="' . $color . '">' . $text . '</TD>'."\n\t\t\t\t\t";
+  $hostOutput .= '<TD bgcolor="white" align="left" class="' . $color . '">' . $service . '</TD>'."\n\t\t\t\t";
 
   if( $counter % 2 == 0 ) {
     $hostOutput .= '</TR><TR>';
