@@ -131,7 +131,7 @@ function showHost( $service, $hostname, $port, $counter, $notify = 0 ) {
 <HEAD>
 </HEAD>
 <BODY bgcolor="white">
-<?require_once( "../../header/index.php" );?>
+<?php require_once( "../../header/index.php" );?>
 <TABLE ALIGN="center" CELLSPACING=1 CELLPADDING=3 BORDER=0>
   <TR>
     <TD BGCOLOR="navy">
@@ -153,5 +153,6 @@ function showHost( $service, $hostname, $port, $counter, $notify = 0 ) {
     </TD>
   </TR>
 </TABLE>
+<?php require_once( "../../footer/index.php" );?>
 </BODY>
 </HTML>
