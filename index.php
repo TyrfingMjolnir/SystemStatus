@@ -2,7 +2,7 @@
 
 /*
    Inspired by Badmoon labs back in 1998 thanks to David Raufeisen( https://twitter.com/fortyoz ) aka fortyoz aka r0rschach
-   Adopted in 1998 by Gjermund G Thorsen beware of nested tables and inline phtml
+   Adopted in 1998 by Gjermund G Thorsen, beware of nested tables and inline phtml
    Released in 2017 due to a conversation with Dennis Efremov for inspiration only
    This peace of software is for inspiration / learning only, and comes with no warranty what so ever.
 */
@@ -68,7 +68,7 @@ if( $notify and $allServicesOK == 0 ) {
 
   $subject = 'One or more services on your system has been down.';
 
-  $body = '';
+  $body    = '';
 
   foreach ( $downList as $key => $value ) {
     $body .= $value."\n";
@@ -116,6 +116,7 @@ function showHost( $service, $hostname, $port, $counter, $notify = 0 ) {
   $hostOutput .= '<TD bgcolor="'.$color.'" align="center" width="3" class="'.$ioColor.'">'.$ioText.'</TD>'."\n\t\t\t\t\t";
   $hostOutput .= '<TD bgcolor="white" align="left" class="'.$color.'">'.$text.'</TD>'."\n\t\t\t\t\t";
   $hostOutput .= '<TD bgcolor="white" align="left" class="'.$color.'">'.$service.'</TD>'."\n\t\t\t\t";
+
   if( $counter % 2 == 0 ) {
     $hostOutput .= '</TR><TR>';
   }
